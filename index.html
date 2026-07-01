@@ -9,15 +9,13 @@
       background-color: #0b1120;
       color: white;
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       text-align: center;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 140px 20px 80px;
     }
 
     h1 {
@@ -26,19 +24,49 @@
     }
 
     p {
-      font-size: 24px;
+      font-size: 22px;
       color: #cbd5e1;
     }
 
-    button {
+    .btn {
+      display: inline-block;
       margin-top: 30px;
       padding: 16px 30px;
       font-size: 20px;
-      border: none;
       border-radius: 8px;
       background: #2563eb;
       color: white;
-      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .projects {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .project-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+
+    .project-card h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 18px;
     }
   </style>
 </head>
@@ -46,7 +74,22 @@
   <div class="container">
     <h1>Roberto KS</h1>
     <p>Power BI • SQL • Python • Data Analytics</p>
-    <button>Ver Projetos</button>
+    <a class="btn" href="#projetos">Ver Projetos</a>
   </div>
+
+  <section class="projects" id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="project-card">
+      <h3>Dashboard Power BI — Petshop</h3>
+      <p>
+        Projeto desenvolvido durante curso da Alura, com foco em análise de faturamento,
+        vendas, média de pets e visualização de indicadores no Power BI.
+      </p>
+      <p><strong>Ferramentas:</strong> Power BI, DAX e visualização de dados.</p>
+
+      <img src="dashboard-petshop.png" alt="Dashboard Power BI Petshop">
+    </div>
+  </section>
 </body>
 </html>
